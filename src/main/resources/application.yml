@@ -24,8 +24,9 @@ logging:
   level:
     com.springboot: DEBUG
 
+# secret : 'spring-boot-jwt-tutorial-secret-key-hyojeong1913-jwt-tutorial-secret-key-2021-06-28' base64 인코딩한 문자열
 jwt:
   header: Authorization
-  secret: c3ByaW5nYm9vdC1qd3QtZ3l3amQxMDE4LWp3dC10dXRvcmlhbC1zZWNyZXQta2V5LTIwMjEtMDYtMjgK # 'springboot-jwt-gywjd1018-jwt-tutorial-secret-key-2021-06-28' base64 인코딩한 문자열
+  secret: c3ByaW5nLWJvb3Qtand0LXR1dG9yaWFsLXNlY3JldC1rZXktaHlvamVvbmcxOTEzLWp3dC10dXRvcmlhbC1zZWNyZXQta2V5LTIwMjEtMDYtMjgK
   token-validity-in-seconds: 86400
 
