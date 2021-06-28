@@ -18,8 +18,14 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
-    defer-datasource-initialization: true # Hibernate 초기화를 통해 생성된 스키마에 데이터를 채우기를 위해서 data.sql 이 실행되도록 하는 옵션
+    defer-datasource-initialization: true # Hibernate 초기화를 통해 생성된 스키마에 데이터를 채우기를 위해서 data.sql  실행되도록 하는 옵션
 
 logging:
   level:
     com.springboot: DEBUG
+
+jwt:
+  header: Authorization
+  secret: c3ByaW5nYm9vdC1qd3QtZ3l3amQxMDE4LWp3dC10dXRvcmlhbC1zZWNyZXQta2V5LTIwMjEtMDYtMjgK # 'springboot-jwt-gywjd1018-jwt-tutorial-secret-key-2021-06-28' base64 인코딩한 문자열
+  token-validity-in-seconds: 86400
+
